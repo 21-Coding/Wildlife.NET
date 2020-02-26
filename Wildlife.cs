@@ -45,7 +45,5 @@ namespace Wildlife.Model
         {
             return _feeding;
         }
-
-
     }
 }
