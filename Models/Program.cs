@@ -15,8 +15,19 @@ namespace Wildlife
 
         List<Animal> Animals = new List<Animal>() {zebra, giraffe, penguin, shark};
 
-           
+            Console.WriteLine("Wildlife Managment");
+            Console.WriteLine("-------------------");
+            Console.WriteLine("Please select an option:");
+            Console.WriteLine("1 to list all animals");
 
+            string menuEntry = Console.ReadLine();
+            if (menuEntry == "1")
+            {
+                foreach(Animal individual in Animals)
+                {
+                    Console.WriteLine(individual.GetAnimalName() + " " + individual.GetAnimalType());
+                }
+            }
         }
     }
 }
